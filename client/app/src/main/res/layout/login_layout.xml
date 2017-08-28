@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="请输入用户名"
+        android:inputType="textEmailAddress"
+        android:digits="@string/allow_input"
+        app:met_iconLeft="@drawable/ic_perm_identity_black_36dp"
+        app:met_iconPadding="0dp"
+        app:met_floatingLabel="highlight"
+        app:met_clearButton="true"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/text_password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        android:digits="@string/allow_input"
+        android:hint="请输入密码"
+        app:met_iconLeft="@drawable/ic_lock_black_36dp"
+        app:met_iconPadding="0dp"
+        app:met_floatingLabel="highlight"
+        app:met_clearButton="true"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rey.material.widget.CheckBox
+        style="@style/Material.Drawable.CheckBox"
+        android:id="@+id/remember_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="记住密码"
+        android:textSize="18sp"
+        app:cbd_animDuration="150"/>
+
+    <com.rey.material.widget.CheckBox
+        style="@style/Material.Drawable.CheckBox"
+        android:id="@+id/auto_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="自动登陆"
+        android:textSize="18sp"
+        app:cbd_animDuration="150"/>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/button_login"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        app:cpb_textComplete="登陆成功"
+        app:cpb_textError="登陆失败"
+        app:cpb_textIdle="登陆"
+        app:cpb_cornerRadius="32dp"/>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/button_register"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cpb_textIdle="注册"
+        app:cpb_textComplete="注册成功，请登陆"
+        app:cpb_cornerRadius="32dp"/>
+</LinearLayout>
