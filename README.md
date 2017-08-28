@@ -1,6 +1,6 @@
 <h1>一个实现了登陆、注册、更新用户信息的基本功能的Android Demo</h1>
 <p>Android前端：按<strong>MVP模式</strong>进行编写，核心使用<strong>Retrofit + RxJava + OkHttp</strong>进行交互和多线程</p>
-<p>后台：使用<strong>SpringBoot + MyBatis</strong>实现User的RESTful API
+<p>后台：使用<strong>SpringBoot + MyBatis</strong>实现User的RESTful API</p>
 <br/>
 <h2>登陆界面</h2>
 
